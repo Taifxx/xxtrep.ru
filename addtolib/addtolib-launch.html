@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>XXTREP: ADD TO Lib</title>
+<title>XXTREP: ADD TO Lib - About</title>
 <meta name="keywords" content="xxtrep kodi addtolib xbmc strm video library">
 <meta name="author" content="Taifxx">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,7 +21,7 @@ body
    background-image: url(../images/wallpaper-339894.jpg);
    background-attachment: scroll;
    background-position: left top;
-   background-repeat: repeat-x;
+   background-repeat: repeat-y;
    color: #000000;
    font-family: Arial;
    font-weight: normal;
@@ -95,9 +95,9 @@ a.Blue_style_bold:hover
    font-weight: bold;
    text-decoration: underline;
 }
-a.WGStyle
+a.Blue_style_gan
 {
-   color: #F5F5F5;
+   color: #1E90FF;
    text-decoration: none;
    -webkit-transition: all 300ms linear;
    -moz-transition: all 300ms linear;
@@ -105,34 +105,78 @@ a.WGStyle
    position: relative;
    display: inline-block;
 }
-a.WGStyle::after
+a.Blue_style_gan::after
 {
    background: transparent;
    content: "";
    display: block;
-   width: 0;
+   margin: auto;
    height: 2px;
+   width: 0;
    margin-top: 2px;
    -webkit-transition: all 300ms linear;
    -moz-transition: all 300ms linear;
    transition: all 300ms linear;
 }
-a.WGStyle:hover::after
+a.Blue_style_gan:hover::after
 {
    background: #6EC401;
    width: 100%;
 }
-a.WGStyle:visited
+a.Blue_style_gan:visited
 {
-   color: #F5F5F5;
+   color: #1E90FF;
    text-decoration: none;
 }
-a.WGStyle:active
+a.Blue_style_gan:active
+{
+   color: #1E90FF;
+   text-decoration: none;
+}
+a.Blue_style_gan:hover
 {
    color: #6EC401;
    text-decoration: none;
 }
-a.WGStyle:hover
+a.Blue_style_gan_1
+{
+   color: #1E90FF;
+   text-decoration: none;
+   -webkit-transition: all 300ms linear;
+   -moz-transition: all 300ms linear;
+   transition: all 300ms linear;
+   position: relative;
+   display: inline-block;
+}
+a.Blue_style_gan_1::after
+{
+   background: transparent;
+   content: "";
+   display: block;
+   margin: auto;
+   height: 1px;
+   width: 0;
+   margin-top: 1px;
+   -webkit-transition: all 300ms linear;
+   -moz-transition: all 300ms linear;
+   transition: all 300ms linear;
+}
+a.Blue_style_gan_1:hover::after
+{
+   background: #6EC401;
+   width: 100%;
+}
+a.Blue_style_gan_1:visited
+{
+   color: #1E90FF;
+   text-decoration: none;
+}
+a.Blue_style_gan_1:active
+{
+   color: #1E90FF;
+   text-decoration: none;
+}
+a.Blue_style_gan_1:hover
 {
    color: #6EC401;
    text-decoration: none;
@@ -735,21 +779,6 @@ a.WGStyle:hover
 {
    border-width: 0;
 }
-#wb_TextMenu1
-{
-   background-color: transparent;
-   background-image: none;
-   color :#000000;
-   font-family: Arial;
-   font-weight: normal;
-   font-size: 13px;
-}
-#wb_TextMenu1 span
-{
-   display: block;
-   margin: 0 0 7px 0;
-   line-height: 16px;
-}
 #wb_Text1 
 {
    background-color: transparent;
@@ -757,11 +786,28 @@ a.WGStyle:hover
    border: 0px #000000 solid;
    padding: 0;
    margin: 0;
-   text-align: center;
+   text-align: left;
 }
 #wb_Text1 div
 {
-   text-align: center;
+   text-align: left;
+}
+#wb_Text2 
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px #000000 solid;
+   padding: 0;
+   margin: 0;
+   text-align: left;
+}
+#wb_Text2 div
+{
+   text-align: left;
+}
+#TextArt1
+{
+   border-width: 0;
 }
 #pFooter
 {
@@ -777,7 +823,7 @@ a.WGStyle:hover
    left: 0px;
    top: 172px;
    width: 99.7506%;
-   height: 169px;
+   height: 152px;
    z-index: 78;
 }
 #footALayer_Container
@@ -803,7 +849,7 @@ a.WGStyle:hover
    left: 0px;
    top: 0px;
    width: 800px;
-   height: 169px;
+   height: 152px;
    z-index: 76;
 }
 #pFooter
@@ -812,7 +858,7 @@ a.WGStyle:hover
    overflow: hidden;
    text-align: left;
    left: 0px;
-   top: 456px;
+   top: 533px;
    width: 100%;
    height: 326px;
    z-index: -1;
@@ -844,12 +890,12 @@ a.WGStyle:hover
 #wb_Text1
 {
    position: absolute;
-   left: 276px;
-   top: 306px;
-   width: 250px;
-   height: 19px;
-   text-align: center;
-   z-index: 81;
+   left: 51px;
+   top: 276px;
+   width: 507px;
+   height: 214px;
+   z-index: 80;
+   text-align: left;
 }
 #footASBtn
 {
@@ -870,10 +916,20 @@ a.WGStyle:hover
    z-index: 59;
    text-align: left;
 }
+#wb_Text2
+{
+   position: absolute;
+   left: 81px;
+   top: 492px;
+   width: 316px;
+   height: 42px;
+   z-index: 81;
+   text-align: left;
+}
 #Shape2
 {
    width: 800px;
-   height: 194px;
+   height: 282px;
 }
 #h2TxtBkg
 {
@@ -999,6 +1055,15 @@ a.WGStyle:hover
    z-index: 5;
    text-align: left;
 }
+#wb_TextArt1
+{
+   position: absolute;
+   left: 589px;
+   top: 334px;
+   width: 188px;
+   height: 132px;
+   z-index: 82;
+}
 #footASEdBox
 {
    position: absolute;
@@ -1080,6 +1145,11 @@ a.WGStyle:hover
    width: 800px;
    height: 197px;
 }
+#TextArt1
+{
+   width: 188px;
+   height: 132px;
+}
 #wb_footBTxt
 {
    position: absolute;
@@ -1124,23 +1194,13 @@ a.WGStyle:hover
    opacity: 0.30;
    z-index: 8;
 }
-#wb_TextMenu1
-{
-   position: absolute;
-   left: 301px;
-   top: 343px;
-   width: 200px;
-   height: 88px;
-   text-align: center;
-   z-index: 80;
-}
 #wb_Shape2
 {
    position: absolute;
    left: 5px;
    top: 278px;
    width: 800px;
-   height: 194px;
+   height: 282px;
    filter: alpha(opacity=70);
    opacity: 0.70;
    z-index: 79;
@@ -1193,7 +1253,7 @@ body
    background-image: url(../images/wallpaper-339894.jpg);
    background-attachment: scroll;
    background-position: left top;
-   background-repeat: repeat-x;
+   background-repeat: repeat-y;
 }
 #pHeader
 {
@@ -1518,15 +1578,12 @@ body
    visibility: visible;
    display: inline;
 }
-#wb_TextMenu1
+#wb_TextArt1
 {
-   left: 282px;
-   top: 319px;
-   width: 200px;
-   height: 20px;
+   left: 614px;
+   top: 337px;
    visibility: visible;
    display: inline;
-   text-decoration: none;
 }
 #pFooter
 {
@@ -1848,15 +1905,13 @@ $(document).ready(function()
 </div>
 <div id="container">
 <div id="wb_Shape2">
-<img src="../images/img0001.gif" id="Shape2" alt=""></div>
-<div id="wb_TextMenu1">
-<span>[<a href="./addtolib-about.html" class="WGStyle">&#1054; &#1087;&#1088;&#1080;&#1083;&#1086;&#1078;&#1077;&#1085;&#1080;&#1080;</a>]</span>
-<span>[<a href="./addtolib-more.html" class="WGStyle">&#1055;&#1086;&#1076;&#1088;&#1086;&#1073;&#1085;&#1072;&#1103; &#1080;&#1085;&#1092;&#1086;&#1088;&#1084;&#1072;&#1094;&#1080;&#1103;</a>]</span>
-<span>[<a href="./addtolib-launch.html" class="WGStyle">&#1051;&#1072;&#1091;&#1085;&#1095;&#1077;&#1088;&#1099;</a>]</span>
-<span>[<a href="./addtolib-faq.html" class="WGStyle">&#1042;&#1086;&#1087;&#1088;&#1086;&#1089;&#1099; &#1080; &#1086;&#1090;&#1074;&#1077;&#1090;&#1099;</a>]</span>
-</div>
+<img src="../images/img0009.gif" id="Shape2" alt=""></div>
 <div id="wb_Text1">
-<span style="color:#1E90FF;font-family:Arial;font-size:16px;"><strong>ADD TO LIB</strong></span></div>
+<span style="color:#FFFFFF;font-family:Arial;font-size:21px;"><strong><br>ADD TO LIB</strong></span><span style="color:#C0C0C0;font-family:Arial;font-size:21px;"><strong>&nbsp; </strong></span><span style="color:#1E90FF;font-family:Arial;font-size:21px;">ЛАУНЧЕРЫ<br><br></span><span style="color:#D3D3D3;font-family:Arial;font-size:13px;">Вам необходимо добавить скрипты лаунчеров в Keymap editor для запуска обновления эпизодов или резервного копирования библиотеки ADD To Lib. Установите скрипты лаунчеров из репозитория xxtrep (ATL: Update launcher, <br>ATL: Backup launcher).<br> <br></span><span style="color:#1E90FF;font-family:Arial;font-size:12px;"><strong>&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp; </strong><a href="http://kodi.wiki/view/Add-on:Keymap_Editor" target="_blank" class="Blue_style_gan_1">что такое Keymap editor?</a><strong><br><br>&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp;&nbsp; </strong><a href="./addtolib-faq.html" class="Blue_style_gan_1">больше информации в FAQ &gt;&gt;<br></a></span></div>
+<div id="wb_Text2">
+<span style="color:#F5F5F5;font-family:Arial;font-size:13px;"><strong>Скачать </strong></span><span style="color:#1E90FF;font-family:Arial;font-size:13px;"><strong><a href="https://github.com/Taifxx/xxtrep/blob/master/repository.xxtrep.zip?raw=true" class="Blue_style_gan">xxtrep репозиторий (рекомендуется)</a></strong></span><span style="color:#1E90FF;font-family:Arial;font-size:8px;"><strong><br><br></strong></span></div>
+<div id="wb_TextArt1">
+<img src="../images/img0010.png" id="TextArt1" alt="ATL" title="ATL"></div>
 </div>
 <div id="pHeader">
 <div id="pHeader_Container">
@@ -1884,14 +1939,14 @@ $(document).ready(function()
 </li>
 <li><a href="./../home.html" target="_self">&#1043;&#1051;&#1040;&#1042;&#1053;&#1040;&#1071;</a>
 </li>
-<li><a class="withsubmenu active" href="./addtolib-index.html" target="_self">ADD&nbsp;TO&nbsp;LIB</a>
+<li><a class="withsubmenu" href="./addtolib-index.html" target="_self">ADD&nbsp;TO&nbsp;LIB</a>
 
 <ul>
 <li class="firstitem"><a href="./addtolib-about.html" target="_self">&#1054;&nbsp;&#1087;&#1088;&#1080;&#1083;&#1086;&#1078;&#1077;&#1085;&#1080;&#1080;</a>
 </li>
 <li><a href="./addtolib-more.html" target="_self">&#1055;&#1086;&#1076;&#1088;&#1086;&#1073;&#1085;&#1077;&#1077;</a>
 </li>
-<li><a href="./addtolib-launch.html" target="_self">&#1051;&#1072;&#1091;&#1085;&#1095;&#1077;&#1088;&#1099;</a>
+<li><a class="active" href="./addtolib-launch.html" target="_self">&#1051;&#1072;&#1091;&#1085;&#1095;&#1077;&#1088;&#1099;</a>
 </li>
 <li class="lastitem"><a href="./addtolib-faq.html" target="_self">&#1042;&#1086;&#1087;&#1088;&#1086;&#1089;&#1099;&nbsp;&#1080;&nbsp;&#1086;&#1090;&#1074;&#1077;&#1090;&#1099;</a>
 </li>

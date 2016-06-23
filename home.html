@@ -137,7 +137,7 @@ a.Blue_style_bold:hover
 {
    border-width: 0;
 }
-#h2Img
+#h2Logo
 {
    border: 0px #000000 solid;
    -moz-box-shadow: 0px 0px 10px #000000;
@@ -331,6 +331,31 @@ a.Blue_style_bold:hover
 {
    background-color: #000000;
    background-image: none;
+}
+#h2Sh3
+{
+   border-width: 0;
+}
+#wb_h2Txt3 
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px #000000 solid;
+   padding: 0;
+   margin: 0;
+   text-align: right;
+}
+#wb_h2Txt3 div
+{
+   text-align: right;
+}
+#h2Sh
+{
+   border-width: 0;
+}
+#h2Sh2
+{
+   border-width: 0;
 }
 #footBLayer
 {
@@ -663,25 +688,13 @@ a.Blue_style_bold:hover
    background-image: none;
    border: 1px #CCCCCC none;
 }
-#Shape2
+#ShBk
 {
    border-width: 0;
 }
-#Layer3
+#ShBk2
 {
-   background-color: #000000;
-   background-image: none;
-   border: 1px #CCCCCC none;
-   filter: alpha(opacity=20);
-   opacity: 0.20;
-}
-#Image2
-{
-   border: 0px #000000 solid;
-   left: 0;
-   top: 0;
-   width: 100%;
-   height: 100%;
+   border-width: 0;
 }
 #hmNews
 {
@@ -725,6 +738,14 @@ a.Blue_style_bold:hover
    left: 50%;
    margin-left: -10px;
    z-index: 4;
+}
+#ImNews
+{
+   border: 0px #000000 solid;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
 }
 #pFooter
 {
@@ -966,20 +987,22 @@ $(document).ready(function()
       }, 250);
    });
    var hmNews_Data = new Array();
-   hmNews_Data[0] = ["./addtolib/addtolib-about.html", "ADD TO LIB V1.0.6", "", "<br>&#1048;&#1089;&#1087;&#1088;&#1072;&#1074;&#1083;&#1077;&#1085;&#1086;:<br>- &#1048;&#1089;&#1087;&#1088;&#1072;&#1074;&#1083;&#1077;&#1085;&#1072; &#1087;&#1088;&#1086;&#1073;&#1083;&#1077;&#1084;&#1072; &#1089; &#1083;&#1086;&#1078;&#1085;&#1099;&#1084;&#1080; &#1089;&#1088;&#1072;&#1073;&#1072;&#1090;&#1099;&#1074;&#1072;&#1085;&#1080;&#1103;&#1084;&#1080; &#1087;&#1088;&#1080; &#1087;&#1088;&#1086;&#1074;&#1077;&#1088;&#1082;&#1077; &#1085;&#1086;&#1074;&#1099;&#1093; &#1101;&#1087;&#1080;&#1079;&#1086;&#1076;&#1086;&#1074;<br>- &#1044;&#1088;&#1091;&#1075;&#1080;&#1077; &#1084;&#1077;&#1083;&#1082;&#1080;&#1077; &#1080;&#1079;&#1084;&#1077;&#1085;&#1077;&#1085;&#1080;&#1103;<br><br>&#1044;&#1086;&#1073;&#1072;&#1074;&#1083;&#1077;&#1085;&#1086;: <br>- &#1055;&#1086;&#1076;&#1076;&#1077;&#1088;&#1078;&#1082;&#1072; SMB<br>- &#1055;&#1088;&#1086;&#1074;&#1077;&#1088;&#1082;&#1072; &#1076;&#1086;&#1089;&#1090;&#1091;&#1087;&#1085;&#1086;&#1089;&#1090;&#1080; &#1073;&#1080;&#1073;&#1083;&#1080;&#1086;&#1090;&#1077;&#1082;&#1080;<br>- &#1054;&#1087;&#1094;&#1080;&#1103; &apos;&#1057;&#1082;&#1088;&#1099;&#1090;&#1100; &#1087;&#1088;&#1080;&#1085;&#1091;&#1076;&#1080;&#1090;&#1077;&#1083;&#1100;&#1085;&#1086;&#1077; &#1076;&#1086;&#1073;&#1072;&#1074;&#1083;&#1077;&#1085;&#1080;&#1077; &#1087;&#1088;&#1080; &#1092;&#1086;&#1085;&#1086;&#1074;&#1086;&#1084; &#1089;&#1082;&#1072;&#1085;&#1080;&#1088;&#1086;&#1074;&#1072;&#1085;&#1080;&#1080;&apos;<br>- &#1050;&#1086;&#1085;&#1090;&#1088;&#1086;&#1083;&#1100; &#1086;&#1073;&#1085;&#1086;&#1074;&#1083;&#1077;&#1085;&#1080;&#1081; &#1080; &#1092;&#1086;&#1085;&#1086;&#1074;&#1099;&#1093; &#1087;&#1088;&#1086;&#1094;&#1077;&#1089;&#1089;&#1086;&#1074; (&#1086;&#1073;&#1085;&#1086;&#1074;&#1083;&#1077;&#1085;&#1080;&#1077; &#1080; &#1088;&#1077;&#1079;&#1077;&#1088;&#1074;&#1080;&#1088;&#1086;&#1074;&#1072;&#1085;&#1080;&#1077; &#1085;&#1077; &#1079;&#1072;&#1087;&#1091;&#1089;&#1082;&#1072;&#1077;&#1090;&#1089;&#1103; &#1077;&#1089;&#1083;&#1080; &#1079;&#1072;&#1087;&#1091;&#1097;&#1077;&#1085; &#1092;&#1086;&#1085;&#1086;&#1074;&#1099;&#1081; &#1087;&#1088;&#1086;&#1094;&#1077;&#1089;&#1089;, &#1086;&#1090;&#1082;&#1088;&#1099;&#1090;&#1086; &#1084;&#1077;&#1085;&#1102; &#1080;&#1083;&#1080; &#1074;&#1099;&#1087;&#1086;&#1083;&#1085;&#1103;&#1077;&#1090;&#1089;&#1103; &#1076;&#1088; &#1076;&#1077;&#1081;&#1089;&#1090;&#1074;&#1080;&#1077;)<br>&nbsp; * &#1042; &#1089;&#1083;&#1091;&#1095;&#1072;&#1077; &#1073;&#1083;&#1086;&#1082;&#1080;&#1088;&#1086;&#1074;&#1082;&#1080; &#1076;&#1086;&#1087;&#1086;&#1083;&#1085;&#1077;&#1085;&#1080;&#1103;, &#1074; &#1088;&#1077;&#1079;&#1091;&#1083;&#1100;&#1090;&#1072;&#1090;&#1077; &#1086;&#1096;&#1080;&#1073;&#1082;&#1080; &#1079;&#1072;&#1087;&#1091;&#1089;&#1090;&#1080;&#1090;&#1077; &#1077;&#1075;&#1086; &#1090;&#1088;&#1080;&#1078;&#1076;&#1099;.<br>- &#1053;&#1086;&#1074;&#1072;&#1103; &#1082;&#1087;&#1090;&#1077;&#1075;&#1086;&#1088;&#1080;&#1103; &#1074; &#1085;&#1072;&#1089;&#1090;&#1088;&#1086;&#1081;&#1082;&#1072;&#1093; &apos;&#1056;&#1077;&#1079;&#1077;&#1088;&#1074;&#1080;&#1088;&#1086;&#1074;&#1072;&#1085;&#1080;&#1077;&apos; (&#1089;&#1086;&#1079;&#1076;&#1072;&#1085;&#1080;&#1077; &#1088;&#1077;&#1079;&#1077;&#1088;&#1074;&#1085;&#1099;&#1093; &#1082;&#1086;&#1087;&#1080;&#1081; &#1073;&#1080;&#1073;&#1083;&#1080;&#1086;&#1090;&#1077;&#1082;&#1080;)<br>- &#1040;&#1074;&#1090;&#1086;&#1084;&#1072;&#1090;&#1080;&#1095;&#1077;&#1089;&#1082;&#1086;&#1077; &#1089;&#1086;&#1079;&#1076;&#1072;&#1085;&#1080;&#1077; &#1088;&#1077;&#1079;&#1077;&#1088;&#1074;&#1085;&#1099;&#1093; &#1082;&#1086;&#1087;&#1080;&#1081;"];
+   hmNews_Data[0] = ["./addtolib/addtolib-about.html", "ADD TO LIB V1.0.8", "", "<br>&#1048;&#1089;&#1087;&#1088;&#1072;&#1074;&#1083;&#1077;&#1085;&#1086;:<br>- &#1048;&#1089;&#1087;&#1088;&#1072;&#1074;&#1083;&#1077;&#1085;&#1072; &#1087;&#1088;&#1086;&#1073;&#1083;&#1077;&#1084;&#1072; &#1089; &#1085;&#1072;&#1074;&#1080;&#1075;&#1072;&#1094;&#1080;&#1077;&#1081; &#1084;&#1077;&#1085;&#1102; &#1082;&#1083;&#1072;&#1074;&#1080;&#1096;&#1072;&#1084;&#1080; &#1087;&#1088;&#1080; &#1080;&#1089;&#1087;&#1086;&#1083;&#1100;&#1079;&#1086;&#1074;&#1072;&#1085;&#1080;&#1080; &#1089;&#1082;&#1080;&#1085;&#1086;&#1074;<br>- &#1044;&#1088;&#1091;&#1075;&#1080;&#1077; &#1084;&#1077;&#1083;&#1082;&#1080;&#1077; &#1080;&#1079;&#1084;&#1077;&#1085;&#1077;&#1085;&#1080;&#1103;<br><br>&#1044;&#1086;&#1073;&#1072;&#1074;&#1083;&#1077;&#1085;&#1086;: <br>- &#1053;&#1086;&#1074;&#1099;&#1081; &#1089;&#1082;&#1080;&#1085; Simple Black<br>"];
    hmNews_Data[1] = ["./forums.html", "&#1053;&#1040;&#1049;&#1044;&#1048;&#1058;&#1045; &#1053;&#1040;&#1057;", "", "<br>&#1053;&#1072;&#1081;&#1076;&#1080;&#1090;&#1077; &#1085;&#1072;&#1089; &#1085;&#1072; &#1092;&#1086;&#1088;&#1091;&#1084;&#1072;&#1093;: Kodi.tv (&#1040;&#1085;&#1075;&#1083;&#1080;&#1081;&#1089;&#1082;&#1080;&#1081; &#1103;&#1079;&#1099;&#1082;) &#1080; Xbmc.ru (&#1056;&#1091;&#1089;&#1089;&#1082;&#1080;&#1081; &#1103;&#1079;&#1099;&#1082;)"];
+   hmNews_Data[2] = ["./addtolib/addtolib-about.html", "ADD TO LIB &#1057; &#1055;&#1054;&#1044;&#1044;&#1045;&#1056;&#1046;&#1050;&#1054;&#1049; &#1057;&#1050;&#1048;&#1053;&#1054;&#1042;", "", "<br>&#1053;&#1072;&#1095;&#1080;&#1085;&#1072;&#1103; &#1089; &#1074;&#1077;&#1088;&#1089;&#1080;&#1080; 1.0.7 ADD TO LIB &#1087;&#1086;&#1076;&#1076;&#1077;&#1088;&#1078;&#1080;&#1074;&#1072;&#1077;&#1090; &#1080;&#1089;&#1087;&#1086;&#1083;&#1100;&#1079;&#1086;&#1074;&#1072;&#1085;&#1080;&#1077; &#1089;&#1082;&#1080;&#1085;&#1086;&#1074;"];
+   hmNews_Data[3] = ["./addtolib/addtolib-faq.html", "&#1044;&#1054;&#1057;&#1058;&#1059;&#1055;&#1045;&#1053; &#1047;&#1040;&#1055;&#1059;&#1057;&#1050; &#1055;&#1054; &#1050;&#1051;&#1040;&#1042;&#1048;&#1064;&#1045;", "", "<br>&#1053;&#1072;&#1095;&#1080;&#1085;&#1072;&#1103; &#1089; &#1074;&#1077;&#1088;&#1089;&#1080;&#1080; 1.0.7 ADD TO LIB &#1084;&#1086;&#1078;&#1085;&#1086; &#1085;&#1072;&#1079;&#1085;&#1072;&#1095;&#1080;&#1090;&#1100; &#1085;&#1072; &#1083;&#1102;&#1073;&#1091;&#1102; &#1082;&#1083;&#1072;&#1074;&#1080;&#1096;&#1091;, &#1080;&#1089;&#1087;&#1086;&#1083;&#1100;&#1079;&#1091;&#1103; Keymap editor<br>&#1053;&#1072;&#1095;&#1080;&#1085;&#1072;&#1103; &#1089; &#1074;&#1077;&#1088;&#1089;&#1080;&#1080; 1.0.8 &#1076;&#1086;&#1089;&#1090;&#1091;&#1087;&#1077;&#1085; &#1079;&#1072;&#1087;&#1091;&#1089;&#1082; &#1087;&#1086; &#1082;&#1083;&#1072;&#1074;&#1080;&#1096;&#1077; &#1086;&#1073;&#1085;&#1086;&#1074;&#1083;&#1077;&#1085;&#1080;&#1103; &#1080; &#1088;&#1077;&#1079;&#1077;&#1088;&#1074;&#1085;&#1086;&#1075;&#1086;&#1082;&#1086;&#1087;&#1080;&#1088;&#1086;&#1074;&#1072;&#1085;&#1080;&#1103;"];
    $("#hmNews").newsviewer({ mode: 'rotate', pause: 5000, pause: 5000, animation: 1, animationDuration: 1500, sortOrder: 0, dataSource: 'local', param: hmNews_Data, target: '_self', includeDate: false, maxItems: 10});
 });
 </script>
 </head>
 <body data-spy="scroll">
-<div id="pFooter" style="position:absolute;overflow:hidden;text-align:left;left:0px;top:554px;width:100%;height:326px;z-index:-1;">
-<div id="footLayerA" style="position:absolute;text-align:center;left:0px;top:1px;width:99.7506%;height:169px;z-index:69;">
+<div id="pFooter" style="position:absolute;overflow:hidden;text-align:left;left:0px;top:551px;width:100%;height:326px;z-index:-1;">
+<div id="footLayerA" style="position:absolute;text-align:center;left:0px;top:1px;width:99.7506%;height:169px;z-index:77;">
 <div id="footLayerA_Container" style="width:800px;position:relative;margin-left:auto;margin-right:auto;text-align:left;">
-<div id="wb_moFootA" style="position:absolute;left:0px;top:0px;width:800px;height:169px;z-index:65;">
-<div id="footALayer" style="position:absolute;text-align:center;left:0px;top:0px;width:100%;height:169px;z-index:64;">
+<div id="wb_moFootA" style="position:absolute;left:0px;top:0px;width:800px;height:169px;z-index:73;">
+<div id="footALayer" style="position:absolute;text-align:center;left:0px;top:0px;width:100%;height:169px;z-index:72;">
 <div id="footALayer_Container" style="width:800px;position:relative;margin-left:auto;margin-right:auto;text-align:left;">
-<div id="wb_footAM3" style="position:absolute;left:383px;top:47px;width:150px;height:80px;z-index:54;">
+<div id="wb_footAM3" style="position:absolute;left:383px;top:47px;width:150px;height:80px;z-index:62;">
 <ul>
 <li class="firstmain"><a href="javascript:displaylightbox('./parts/lbtranslate.html',{width:450,height:150,overlayShow:true,overlayColor:'#1E1E1E'})" target="_self">&#1055;&#1077;&#1088;&#1077;&#1074;&#1086;&#1076;</a>
 </li>
@@ -989,9 +1012,9 @@ $(document).ready(function()
 </li>
 </ul>
 </div>
-<div id="wb_footACapM3" style="position:absolute;left:387px;top:26px;width:132px;height:15px;z-index:55;text-align:left;">
+<div id="wb_footACapM3" style="position:absolute;left:387px;top:26px;width:132px;height:15px;z-index:63;text-align:left;">
 &nbsp;</div>
-<div id="wb_footAM2" style="position:absolute;left:235px;top:47px;width:150px;height:80px;z-index:56;">
+<div id="wb_footAM2" style="position:absolute;left:235px;top:47px;width:150px;height:80px;z-index:64;">
 <ul>
 <li class="firstmain"><a href="javascript:displaylightbox('./parts/lbsuported.html',{width:450,height:150,overlayShow:true,overlayColor:'#1E1E1E'})" target="_self">&#1044;&#1086;&#1089;&#1090;&#1091;&#1087;&#1085;&#1099;&#1077;&nbsp;&#1087;&#1083;&#1072;&#1090;&#1092;&#1086;&#1088;&#1084;&#1099;</a>
 </li>
@@ -1003,9 +1026,9 @@ $(document).ready(function()
 </li>
 </ul>
 </div>
-<div id="wb_footACapM2" style="position:absolute;left:235px;top:26px;width:147px;height:15px;z-index:57;text-align:left;">
+<div id="wb_footACapM2" style="position:absolute;left:235px;top:26px;width:147px;height:15px;z-index:65;text-align:left;">
 &nbsp;</div>
-<div id="wb_footAM1" style="position:absolute;left:13px;top:47px;width:200px;height:80px;z-index:58;">
+<div id="wb_footAM1" style="position:absolute;left:13px;top:47px;width:200px;height:80px;z-index:66;">
 <ul>
 <li class="firstmain"><a href="https://kodi.tv/about/" target="_blank">&#1063;&#1090;&#1086;&nbsp;&#1090;&#1072;&#1082;&#1086;&#1077;&nbsp;Kodi?</a>
 </li>
@@ -1015,15 +1038,15 @@ $(document).ready(function()
 </li>
 </ul>
 </div>
-<div id="wb_footACapM1" style="position:absolute;left:16px;top:26px;width:250px;height:15px;z-index:59;text-align:left;">
+<div id="wb_footACapM1" style="position:absolute;left:16px;top:26px;width:250px;height:15px;z-index:67;text-align:left;">
 <span style="color:#FFFFFF;font-family:Arial;font-size:12px;"><strong>БЫСТРЫЕ ОТВЕТЫ</strong></span></div>
-<div id="wb_footASearch" style="position:absolute;left:527px;top:20px;width:269px;height:108px;z-index:60;">
+<div id="wb_footASearch" style="position:absolute;left:527px;top:20px;width:269px;height:108px;z-index:68;">
 <form name="Search" method="get" action="javascript:searchPage();" id="footASearch">
-<div id="wb_footASCap" style="position:absolute;left:18px;top:6px;width:137px;height:15px;z-index:51;text-align:left;">
+<div id="wb_footASCap" style="position:absolute;left:18px;top:6px;width:137px;height:15px;z-index:59;text-align:left;">
 <span style="color:#FFFFFF;font-family:Arial;font-size:12px;"><strong>ПОИСК</strong></span></div>
 <form name="footASEdBox_form" id="footASEdBox_form" accept-charset="UTF-8" onsubmit="return searchPage(features)">
-<input type="text" id="footASEdBox" style="position:absolute;left:18px;top:29px;width:243px;height:23px;line-height:23px;z-index:52;" name="SiteSearch1" value="" placeholder="&#1055;&#1086;&#1080;&#1089;&#1082; &#1087;&#1086; &#1089;&#1072;&#1081;&#1090;&#1091;"></form>
-<input type="button" id="footASBtn" onclick="searchPage();return false;" name="Search" value="GO!" style="position:absolute;left:155px;top:64px;width:108px;height:25px;z-index:53;">
+<input type="text" id="footASEdBox" style="position:absolute;left:18px;top:29px;width:243px;height:23px;line-height:23px;z-index:60;" name="SiteSearch1" value="" placeholder="&#1055;&#1086;&#1080;&#1089;&#1082; &#1087;&#1086; &#1089;&#1072;&#1081;&#1090;&#1091;"></form>
+<input type="button" id="footASBtn" onclick="searchPage();return false;" name="Search" value="GO!" style="position:absolute;left:155px;top:64px;width:108px;height:25px;z-index:61;">
 </form>
 </div>
 </div>
@@ -1031,11 +1054,11 @@ $(document).ready(function()
 </div>
 </div>
 </div>
-<div id="footLayerB" style="position:absolute;text-align:center;left:0px;top:172px;width:99.7506%;height:220px;z-index:70;">
+<div id="footLayerB" style="position:absolute;text-align:center;left:0px;top:172px;width:99.7506%;height:220px;z-index:78;">
 <div id="footLayerB_Container" style="width:800px;position:relative;margin-left:auto;margin-right:auto;text-align:left;">
-<div id="wb_moFootB" style="position:absolute;left:0px;top:0px;width:800px;height:169px;z-index:68;">
-<div id="footBLayer" style="position:absolute;text-align:left;left:0px;top:0px;width:100%;height:16.0038%;z-index:67;">
-   <div id="wb_footBTxt" style="position:absolute;left:0%;top:8%;width:99%;height:89%;text-align:center;z-index:66;">
+<div id="wb_moFootB" style="position:absolute;left:0px;top:0px;width:800px;height:169px;z-index:76;">
+<div id="footBLayer" style="position:absolute;text-align:left;left:0px;top:0px;width:100%;height:16.0038%;z-index:75;">
+   <div id="wb_footBTxt" style="position:absolute;left:0%;top:8%;width:99%;height:89%;text-align:center;z-index:74;">
       <span class="Shad_8">Авторское право © 2016 Taifxx<br></span><span class="Shad"><br>Эта программа является свободным программным обеспечением: вы можете распространять и/или модифицировать ее согласно условиям стандартной общественной лицензии GNU, опубликованной Фондом свободного программного обеспечения, версии 3, либо (по вашему выбору) любой более поздней версии. <br><br>Эта программа распространяется в надежде, что она будет полезной, но без каких-либо гарантий; даже без подразумеваемых гарантий коммерческой ценности или пригодности для конкретной цели. Смотрите стандартную общественную лицензию GNU для получения дополнительной информации. <br><br></span><span style="color:#F5F5F5;font-family:'Trebuchet MS';font-size:9.3px;"><strong><a href="http://www.gnu.org/licenses" class="Blue_style_bold">http://www.gnu.org/licenses</a></strong></span></div>
 </div>
 </div>
@@ -1043,27 +1066,27 @@ $(document).ready(function()
 </div>
 </div>
 <div id="container">
-<div id="wb_Shape2" style="position:absolute;left:6px;top:278px;width:800px;height:294px;filter:alpha(opacity=70);opacity:0.70;z-index:71;">
-<img src="images/img0021.gif" id="Shape2" alt="" style="width:800px;height:294px;"></div>
-<div id="Layer3" style="position:absolute;text-align:left;left:16px;top:288px;width:776px;height:251px;z-index:72;">
+<div id="wb_ShBk" style="position:absolute;left:5px;top:278px;width:800px;height:294px;filter:alpha(opacity=70);opacity:0.70;z-index:79;">
+<img src="images/img0021.gif" id="ShBk" alt="" style="width:800px;height:294px;"></div>
+<div id="wb_ShBk2" style="position:absolute;left:17px;top:289px;width:777px;height:252px;filter:alpha(opacity=20);opacity:0.20;z-index:80;">
+<img src="images/img0008.png" id="ShBk2" alt="" style="width:777px;height:252px;"></div>
+<div id="hmNews" style="overflow:hidden;position:absolute;left:194px;top:289px;width:582px;height:234px;z-index:81;">
 </div>
-<div id="wb_Image2" style="position:absolute;left:16px;top:339px;width:150px;height:150px;z-index:73;">
-<img src="images/flag.png" id="Image2" alt=""></div>
-<div id="hmNews" style="overflow:hidden;position:absolute;left:194px;top:289px;width:582px;height:234px;z-index:74;">
-</div>
+<div id="wb_ImNews" style="position:absolute;left:29px;top:308px;width:150px;height:150px;z-index:82;">
+<img src="images/img0007.png" id="ImNews" alt=""></div>
 </div>
 <div id="pHeader" style="position:absolute;overflow:hidden;text-align:center;left:0px;top:0px;width:100%;height:279px;z-index:7777;">
 <div id="pHeader_Container" style="width:802px;position:relative;margin-left:auto;margin-right:auto;text-align:left;">
-<div id="wb_moHead" style="position:absolute;left:0px;top:0px;width:805px;height:278px;z-index:8;">
+<div id="wb_moHead" style="position:absolute;left:0px;top:0px;width:805px;height:278px;z-index:12;">
 <div id="wb_h2Bkg" style="position:absolute;left:5px;top:81px;width:800px;height:197px;z-index:2;">
 <img src="images/img0016.gif" id="h2Bkg" alt="" style="width:800px;height:197px;"></div>
 <div id="wb_h2TxtBkg" style="position:absolute;left:5px;top:100px;width:382px;height:69px;filter:alpha(opacity=50);opacity:0.50;z-index:3;">
 <img src="images/img0017.gif" id="h2TxtBkg" alt="" style="width:382px;height:69px;"></div>
-<div id="wb_h2Img" style="position:absolute;left:5px;top:183px;width:800px;height:95px;z-index:4;">
-<img src="images/img0018.png" id="h2Img" alt=""></div>
-<div id="wb_h2TxtA" style="position:absolute;left:39px;top:113px;width:348px;height:14px;z-index:5;text-align:left;">
-<span style="color:#DCDCDC;font-family:Arial;font-size:11px;">Установка</span><span style="color:#F5F5F5;font-family:Arial;font-size:11px;"> дополнений из репозитория XXTREP для KODI от </span><span style="color:#1E90FF;font-family:Arial;font-size:11px;"><strong>Taifxx</strong></span></div>
-<div id="wb_h2TxtB" style="position:absolute;left:39px;top:139px;width:246px;height:15px;z-index:6;text-align:left;">
+<div id="wb_h2Logo" style="position:absolute;left:518px;top:69px;width:235px;height:209px;z-index:4;">
+<img src="images/kodi-logo-b.png" id="h2Logo" alt=""></div>
+<div id="wb_h2TxtA" style="position:absolute;left:36px;top:118px;width:348px;height:14px;z-index:5;text-align:left;">
+<span style="color:#DCDCDC;font-family:Arial;font-size:11px;">Установка</span><span style="color:#F5F5F5;font-family:Arial;font-size:11px;"> дополнений из репозитория XXTREP для KODI от <strong>Taifxx</strong></span></div>
+<div id="wb_h2TxtB" style="position:absolute;left:36px;top:137px;width:246px;height:15px;z-index:6;text-align:left;">
 <span style="color:#F5F5F5;font-family:Arial;font-size:12px;"><strong>Скачать рерозиторий: <a href="https://github.com/Taifxx/xxtrep/blob/master/repository.xxtrep.zip?raw=true" class="Blue_style">xxtrep.repository</a></strong> </span></div>
 <div id="h1Layer" style="position:absolute;text-align:center;left:5px;top:1px;width:800px;height:80px;z-index:7;">
 <div id="h1Layer_Container" style="width:800px;position:relative;margin-left:auto;margin-right:auto;text-align:left;">
@@ -1083,7 +1106,9 @@ $(document).ready(function()
 <ul>
 <li class="firstitem"><a href="./addtolib/addtolib-about.html" target="_self">&#1054;&nbsp;&#1087;&#1088;&#1080;&#1083;&#1086;&#1078;&#1077;&#1085;&#1080;&#1080;</a>
 </li>
-<li><a href="./addtolib/addtolib-more.html" target="_self">&#1055;&#1086;&#1076;&#1088;&#1086;&#1073;&#1085;&#1077;&#1077;...</a>
+<li><a href="./addtolib/addtolib-more.html" target="_self">&#1055;&#1086;&#1076;&#1088;&#1086;&#1073;&#1085;&#1077;&#1077;</a>
+</li>
+<li><a href="./addtolib/addtolib-launch.html" target="_self">&#1051;&#1072;&#1091;&#1085;&#1095;&#1077;&#1088;&#1099;</a>
 </li>
 <li class="lastitem"><a href="./addtolib/addtolib-faq.html" target="_self">&#1042;&#1086;&#1087;&#1088;&#1086;&#1089;&#1099;&nbsp;&#1080;&nbsp;&#1086;&#1090;&#1074;&#1077;&#1090;&#1099;</a>
 </li>
@@ -1105,6 +1130,14 @@ $(document).ready(function()
 <img src="images/img0019.png" id="h1Logo" alt=""  style="position:absolute;left:34px;top:13px;width:287px;height:54px;z-index:1;">
 </div>
 </div>
+<div id="wb_h2Sh3" style="position:absolute;left:220px;top:175px;width:167px;height:21px;filter:alpha(opacity=30);opacity:0.30;z-index:8;">
+<img src="images/img0006.png" id="h2Sh3" alt="" style="width:167px;height:21px;"></div>
+<div id="wb_h2Txt3" style="position:absolute;left:267px;top:180px;width:105px;height:14px;text-align:right;z-index:9;">
+<span style="color:#DCDCDC;font-family:Arial;font-size:11px;"> </span><span style="color:#1E90FF;font-family:Arial;font-size:11px;"><strong>&gt;&gt;</strong></span><span style="color:#9ACD32;font-family:Arial;font-size:11px;"><strong> </strong></span><span style="color:#DCDCDC;font-family:Arial;font-size:11px;">Make it Easy</span><span style="color:#FFFFFF;font-family:Arial;font-size:11px;">!</span></div>
+<div id="wb_h2Sh" style="position:absolute;left:5px;top:169px;width:34px;height:8px;z-index:10;">
+<img src="images/img0012.gif" id="h2Sh" alt="" style="width:34px;height:8px;"></div>
+<div id="wb_h2Sh2" style="position:absolute;left:39px;top:169px;width:349px;height:8px;z-index:11;">
+<img src="images/img0013.png" id="h2Sh2" alt="" style="width:349px;height:8px;"></div>
 </div>
 </div>
 </div>
