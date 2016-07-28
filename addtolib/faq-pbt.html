@@ -1,0 +1,96 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>--faq</title>
+<meta name="keywords" content="xxtrep kodi addtolib xbmc strm video library">
+<meta name="author" content="Taifxx">
+<link href="../icsit.ico" rel="shortcut icon" type="image/x-icon">
+<style type="text/css">
+div#container
+{
+   width: 970px;
+   position: relative;
+   margin: 0 auto 0 auto;
+   text-align: left;
+}
+body
+{
+   background-color: transparent;
+   color: #000000;
+   font-family: Arial;
+   font-weight: normal;
+   font-size: 13px;
+   line-height: 1.1875;
+   margin: 0;
+   text-align: center;
+}
+a
+{
+   color: #0000FF;
+   text-decoration: underline;
+}
+a:visited
+{
+   color: #800080;
+}
+a:active
+{
+   color: #FF0000;
+}
+a:hover
+{
+   color: #0000FF;
+   text-decoration: underline;
+}
+#wb_Text1 
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px #000000 solid;
+   padding: 0;
+   margin: 0;
+   text-align: justify;
+}
+#wb_Text1 div
+{
+   text-align: justify;
+}
+#Image1
+{
+   border: 0px #000000 solid;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#wb_Text2 
+{
+   background-color: transparent;
+   background-image: none;
+   border: 0px #000000 solid;
+   padding: 0;
+   margin: 0;
+   text-align: left;
+}
+#wb_Text2 div
+{
+   text-align: left;
+}
+</style>
+<script type="text/javascript" src="../jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="../jquery.ui.effect.min.js"></script>
+<script type="text/javascript" src="../jquery.ui.effect-blind.min.js"></script>
+<script type="text/javascript" src="../wwb11.min.js"></script>
+</head>
+<body onunload="ShowObjectWithEffect('wb_Text1', 0, 'blindhorizontal', 500);return false;">
+<div id="container">
+<div id="wb_Text1" style="position:absolute;left:3px;top:33px;width:517px;height:616px;text-align:justify;z-index:0;">
+<span style="color:#DCDCDC;font-family:Arial;font-size:13px;">Режимы воспроизведения служат для возможности работы с аддонами, не поддерживающими стандартный (классический) метод воспроизведения. При попытке запуска отображается окно '</span><span style="color:#1E90FF;font-family:Arial;font-size:13px;">Открытие потока</span><span style="color:#DCDCDC;font-family:Arial;font-size:13px;">', отображается черный экран и зависает интерфейс, воспроизводится не тот файл и т.д. Для полноценной работы с режимами воспроизведения, в настройках дополнения (пункт воспроизведение) режимом по умолчанию должен быть выбран '</span><span style="color:#1E90FF;font-family:Arial;font-size:13px;">Predefined</span><span style="color:#DCDCDC;font-family:Arial;font-size:13px;">' (Предопределенный). В этом случае, если для аддона-источника уже выбран режим воспроизведения система автоматически запустит воспроизведение в этом режиме, если нет, то предложит пользователю единоразово выбрать режим. Вариант '</span><span style="color:#1E90FF;font-family:Arial;font-size:13px;">автоопределение</span><span style="color:#DCDCDC;font-family:Arial;font-size:13px;">' позволит системе попытаться автоматически определить необходимый режим.<br><br>&nbsp;&nbsp;&nbsp; </span><span style="color:#9ACD32;font-family:Arial;font-size:21px;"><strong>(!)</strong></span><span style="color:#DCDCDC;font-family:Arial;font-size:13px;">&nbsp; Во время '</span><span style="color:#1E90FF;font-family:Arial;font-size:13px;">автоопределения</span><span style="color:#DCDCDC;font-family:Arial;font-size:13px;">' интерфейс может зависать на 3-15 секунд.<br>&nbsp;&nbsp; &nbsp;&nbsp; <br></span><span style="color:#9ACD32;font-family:Arial;font-size:13px;">Классический </span><span style="color:#DCDCDC;font-family:Arial;font-size:13px;">и </span><span style="color:#9ACD32;font-family:Arial;font-size:13px;">Альтернативный </span><span style="color:#DCDCDC;font-family:Arial;font-size:13px;">режимы - стандартные режимы для запуска воспроизведения. Альтернативный режим может решать часть проблем с запуском проблемных аддонов, но следует заметить, что это не является его основным предназначением, в связи с чем, рекомендуется для решения проблем использовать режимы </span><span style="color:#1E90FF;font-family:Arial;font-size:13px;">ISP </span><span style="color:#DCDCDC;font-family:Arial;font-size:13px;">или </span><span style="color:#1E90FF;font-family:Arial;font-size:13px;">Каталог</span><span style="color:#DCDCDC;font-family:Arial;font-size:13px;">.<br><br>Режим </span><span style="color:#1E90FF;font-family:Arial;font-size:13px;"><strong>ISP </strong>(Внутренний плеер источника)</span><span style="color:#DCDCDC;font-family:Arial;font-size:13px;"> позволяет запускать воспроизведение силами внутреннего плеера аддона. Следует заметить, что при этом информация о медиа контенте (название, обложка, роли и т.д.) передаются плееру аддоном источником а не дополнением ADD To Lib.<br><br>Режим </span><span style="color:#1E90FF;font-family:Arial;font-size:13px;"><strong>Каталог </strong></span><span style="color:#DCDCDC;font-family:Arial;font-size:13px;">- надстройка над режимом </span><span style="color:#1E90FF;font-family:Arial;font-size:13px;">ISP</span><span style="color:#DCDCDC;font-family:Arial;font-size:13px;">, позволяющая при выборе фильма (сериала) в библиотеке открыть папку аддона, содержащую ссылку на воспроизводимый файл. Если Вам необходимо добавить фильм (сериал) для запуска в подобном режиме, при добавлении следует использовать '</span><span style="color:#1E90FF;font-family:Arial;font-size:13px;">принудительное добавление</span><span style="color:#DCDCDC;font-family:Arial;font-size:13px;">', а в качестве добавляемого объекта указывать папку, а не сам файл.<br><br>Стоит отметить, что все&nbsp; режимы </span><span style="color:#9ACD32;font-family:Arial;font-size:13px;">поддерживают </span><span style="color:#DCDCDC;font-family:Arial;font-size:13px;">сохранение позиции и статуса просмотренного. Возможность перемотки и возобновления позиции может определяться </span><span style="color:#FF0000;font-family:Arial;font-size:13px;">возможностями внутреннего плеера</span><span style="color:#DCDCDC;font-family:Arial;font-size:13px;"> аддона.<br><br></span><span style="color:#A9A9A9;font-family:Arial;font-size:13px;"><em><br></em><br></span></div>
+<div id="wb_Image1" style="position:absolute;left:0px;top:16px;width:360px;height:20px;z-index:1;">
+<img src="../images/line.png" id="Image1" alt=""></div>
+<div id="wb_Text2" style="position:absolute;left:0px;top:0px;width:391px;height:19px;z-index:2;text-align:left;">
+<span style="color:#1E90FF;font-family:Arial;font-size:16px;"><strong>РЕЖИМЫ ВОСПРОИЗВЕДЕНИЯ</strong></span></div>
+</div>
+</body>
+</html>
