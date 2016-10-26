@@ -99,13 +99,115 @@ a.WGStyle:hover
 {
    text-align: justify;
 }
+#Image1
+{
+   border: 0px #000000 solid;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
+#PhotoGallery2
+{
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   box-sizing: border-box;
+   width: 100%;
+   height: 100%;
+   table-layout: fixed;
+   display: table;
+}
+#PhotoGallery2 .thumbnails
+{
+   margin: 0;
+}
+#PhotoGallery2 .thumbnail
+{
+   position: relative;
+   min-height: 1px;
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   box-sizing: border-box;
+   float: left;
+   padding: 3px 3px 3px 3px;
+   width: 33.33333333%;
+   text-align: center;
+   vertical-align: top;
+}
+#PhotoGallery2 .thumbnail img
+{
+   border: 0px #000000 solid;
+   display: block;
+   width: 100%;
+   height: auto;
+   max-width: 100%;
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   box-sizing: border-box;
+}
+#PhotoGallery2 .clearfix:before,
+#PhotoGallery2 .clearfix:after,
+#PhotoGallery2 .thumbnails:before,
+#PhotoGallery2 .thumbnails:after
+{
+   display: table;
+   content: " ";
+}
+#PhotoGallery2 .clearfix:after,
+#PhotoGallery2 .thumbnails:after
+{
+   clear: both;
+}
+#PhotoGallery2 .visible-col3
+{
+   display: block;
+}
+#Image2
+{
+   border: 0px #000000 solid;
+   left: 0;
+   top: 0;
+   width: 100%;
+   height: 100%;
+}
 </style>
+<script type="text/javascript" src="../jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="../fancybox/jquery.easing-1.3.pack.js"></script>
+<link rel="stylesheet" href="../fancybox/jquery.fancybox-1.3.4.css" type="text/css">
+<script type="text/javascript" src="../fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+<script type="text/javascript" src="../fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
+<script type="text/javascript">
+$(document).ready(function()
+{
+$("a[rel^='PhotoGallery2']").fancybox({overlayShow:true,
+overlayColor:'#1E1E1E'});
+});
+</script>
 </head>
 <body>
 <div id="container">
-<div id="wb_MasterObjects1" style="position:absolute;left:0px;top:0px;width:731px;height:760px;z-index:1;">
-<div id="wb_Text1" style="position:absolute;left:27px;top:9px;width:704px;height:752px;text-align:justify;z-index:0;">
-<span style="color:#1E90FF;font-family:Arial;font-size:13px;"><strong>Добавление сериала (сезона):</strong></span><span style="color:#DCDCDC;font-family:Arial;font-size:13px;"><br><br>Для добавления сериала (сезона сериала), необходимо находиться в папке, содержащей проигрываемые ссылки на эпизоды сериала, вызвать контекстное меню любого из эпизодов и выбрать пункт 'Add to Lib'. В меню дополнения выбрать пункт 'Добавить в библиотеку как сезон сериала'.<br><br>Если дополнение смогло определить название сериала, и такой сериал уже добавлен, эпизоды будут добавлены к уже добавленному сериалу. Пункт 'Обновить эпизоды сериала', используется для добавления новых эпизодов, к уже добавленным эпизодам источника.<br><br>При добавлении эпизодов нового или уже добавленного сериала, автоматически добавляется 'Источник эпизодов' (ссылка на папку из которой Вы добавляете эпизоды). В дальнейшем, дополнение может сканировать эту папку и сообщать о появившихся в ней новых эпизодах. Один сериал может содержать множество источников, управление ими осуществляется в пункте меню дополнения 'Управление источниками'.<br><br>Для сериала вручную может быть добавлен 'источник сезонов' (ссылка на папку содержащую список сезонов сериала). В этом случае дополнение будет сканировать папку на наличие в ней новых сезонов.<br><br>Управление сериалами осуществляется в пункте меню дополнения 'Управление сериалами'.</span><span style="color:#C0C0C0;font-family:Arial;font-size:13px;"><br></span><span style="color:#DCDCDC;font-family:Arial;font-size:13px;"><br></span><span style="color:#1E90FF;font-family:Arial;font-size:13px;"><strong>Обновление эпизодов (сезонов):</strong></span><span style="color:#DCDCDC;font-family:Arial;font-size:13px;"><br><br>Для проверки обновления эпизодов текущего сериала, выберите пункт 'Проверить наличие новых эпизодов', для проверки обновлений эпизодов всех сериалов используйте пункт меню 'Глобальная проверка обновлений'. В случае, если обновления будут обнаружены, дополнение отобразит их список. При выборе предлагаемого к обновлению источника, обновление пройдет автоматически.<br><br>Отключить проверку на наличие новых эпизодов или сезонов можно в пункте меню дополнения 'Управление обновлением'.<br><br></span><span style="color:#1E90FF;font-family:Arial;font-size:13px;"><strong>Вызываемые URL:</strong></span><span style="color:#DCDCDC;font-family:Arial;font-size:13px;"><br><br>В данном дополнении реализована возможность получения полноценной информации из библиотеки для воспроизводимых .strm файлов (постеры, фан-арт, позиция просмотра и т.д.). Для использования данной возможности необходимо создание в .strm файлах ссылок вызывающих при проигрывании файла данное дополнение. В случае запуска .strm файла с 'вызываемой ссылкой' при проигрывание будут доступны данных об эпизоде, сериале а также включена функция сохранения позиции и статуса 'Просмотрено'.<br><br>Включение и отключение подобной возможности производится в настройках дополнения.<br><br>Если вы хотите получать данные о проигрываемом фильме (эпизоде), но не желаете использовать механизм сохранения текущей позиции и статуса 'Просмотрено' (может увеличивать нагрузку на процессор), отключите 'Контроль воспроизведения' в настройках дополнения.<br><br><br><br><a href="./mp1.html" class="WGStyle">&lt; Назад</a>&nbsp;&nbsp;&nbsp;&nbsp; <a href="./mp3.html" class="WGStyle">Вперед &gt;</a></span></div>
+<div id="wb_MasterObjects1" style="position:absolute;left:0px;top:0px;width:731px;height:760px;z-index:4;">
+<div id="wb_Text1" style="position:absolute;left:26px;top:9px;width:704px;height:416px;text-align:justify;z-index:0;">
+<span style="color:#1E90FF;font-family:Arial;font-size:13px;"><strong>Контроль воспроизведения:</strong></span><span style="color:#DCDCDC;font-family:Arial;font-size:13px;"><br><br>В данном дополнении реализована возможность получения полноценной информации из библиотеки для воспроизводимых .strm файлов (постеры, фан-арт, позиция просмотра и т.д.).&nbsp; Для этого при запуске воспроизведения фильма / сериала вызывается данное лополнение, контролирующее процесс воспроизведения.<br><br></span><span style="color:#1E90FF;font-family:Arial;font-size:13px;"><strong>Синхронизация:</strong></span><span style="color:#DCDCDC;font-family:Arial;font-size:13px;"><br><br>Начиная с версии 1.0.12 ADD to Lib позволяет производить синхронизацию видео базы данных и статусов просмотра с Dropbox. Таким образом несколько удаленно расположенных устройств могут получать изменения видео базы данных и статусов просмотра без наличия сервера, а также убирает необходимость храпнения общей базы для нескольких устройств в локальной сети.<br><br><br><br><br><br><br><br><br><br><br><br><br><br>&nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; &nbsp;&nbsp; <a href="./mp1.html" class="WGStyle">&lt; Назад</a>&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="color:#808080;font-family:Arial;font-size:13px;">Вперед &gt;</span></div>
+<div id="wb_Image1" style="position:absolute;left:198px;top:203px;width:360px;height:20px;z-index:1;">
+<img src="../images/line.png" id="Image1" alt=""></div>
+<div id="wb_PhotoGallery2" style="position:absolute;left:92px;top:230px;width:573px;height:110px;z-index:2;">
+<div id="PhotoGallery2">
+   <div class="thumbnails">
+      <div class="thumbnail">
+         <a href="../images/screenshot015.png" rel="PhotoGallery2"><img alt="" src="../images/screenshot015.png"></a>
+      </div>
+      <div class="thumbnail">
+         <a href="../images/screenshot014.png" rel="PhotoGallery2"><img alt="" src="../images/screenshot014.png"></a>
+      </div>
+      <div class="thumbnail">
+         <a href="../images/screenshot012.png" rel="PhotoGallery2"><img alt="" src="../images/screenshot012.png"></a>
+      </div>
+      <div class="clearfix visible-col3"></div>
+   </div>
+</div></div>
+<div id="wb_Image2" style="position:absolute;left:198px;top:348px;width:360px;height:20px;z-index:3;">
+<img src="../images/line.png" id="Image2" alt=""></div>
 </div>
 </div>
 </body>

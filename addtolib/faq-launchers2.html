@@ -43,6 +43,48 @@ a:hover
    color: #0000FF;
    text-decoration: underline;
 }
+a.WGStyle
+{
+   color: #F5F5F5;
+   text-decoration: none;
+   -webkit-transition: all 300ms linear;
+   -moz-transition: all 300ms linear;
+   transition: all 300ms linear;
+   position: relative;
+   display: inline-block;
+}
+a.WGStyle::after
+{
+   background: transparent;
+   content: "";
+   display: block;
+   width: 0;
+   height: 2px;
+   margin-top: 2px;
+   -webkit-transition: all 300ms linear;
+   -moz-transition: all 300ms linear;
+   transition: all 300ms linear;
+}
+a.WGStyle:hover::after
+{
+   background: #6EC401;
+   width: 100%;
+}
+a.WGStyle:visited
+{
+   color: #F5F5F5;
+   text-decoration: none;
+}
+a.WGStyle:active
+{
+   color: #6EC401;
+   text-decoration: none;
+}
+a.WGStyle:hover
+{
+   color: #6EC401;
+   text-decoration: none;
+}
 #wb_Text1 
 {
    background-color: transparent;
@@ -81,12 +123,26 @@ a:hover
 <script type="text/javascript" src="../jquery-1.11.3.min.js"></script>
 <script type="text/javascript" src="../jquery.ui.effect.min.js"></script>
 <script type="text/javascript" src="../jquery.ui.effect-blind.min.js"></script>
+<script type="text/javascript" src="../fancybox/jquery.easing-1.3.pack.js"></script>
+<link rel="stylesheet" href="../fancybox/jquery.fancybox-1.3.4.css" type="text/css">
+<script type="text/javascript" src="../fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+<script type="text/javascript" src="../fancybox/jquery.mousewheel-3.0.4.pack.js"></script>
 <script type="text/javascript" src="../wwb11.min.js"></script>
+<script type="text/javascript">
+function displaylightbox(url, options)
+{
+   options.padding = 0;
+   options.autoScale = true;
+   options.href = url;
+   options.type = 'iframe';
+   $.fancybox(options);
+}
+</script>
 </head>
 <body onunload="ShowObjectWithEffect('wb_Text1', 0, 'blindhorizontal', 500);return false;">
 <div id="container">
-<div id="wb_Text1" style="position:absolute;left:3px;top:38px;width:517px;height:864px;text-align:justify;z-index:0;">
-<span style="color:#D3D3D3;font-family:Arial;font-size:13px;">Репозиторий XXTREP включает в себя два аддона:</span><span style="color:#C0C0C0;font-family:Arial;font-size:13px;"> <br>&nbsp;&nbsp;&nbsp;&nbsp; <br>&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="color:#9ACD32;font-family:Arial;font-size:13px;"><em>ATL: Update launcher </em></span><span style="color:#D3D3D3;font-family:Arial;font-size:13px;">- для запуска обновления эпизодов<br></span><span style="color:#C0C0C0;font-family:Arial;font-size:13px;"><em>&nbsp;&nbsp;&nbsp;&nbsp; </em></span><span style="color:#9ACD32;font-family:Arial;font-size:13px;"><em>ATL: Backup launcher </em></span><span style="color:#D3D3D3;font-family:Arial;font-size:13px;">- для запуска резервного копирования</span><span style="color:#C0C0C0;font-family:Arial;font-size:13px;"><br><br></span><span style="color:#D3D3D3;font-family:Arial;font-size:13px;">Если нужно, Вы можете запустить их, используя Keymap editor </span><span style="color:#A9A9A9;font-family:Arial;font-size:13px;"><em>(как и сам ADD To Lib)</em></span><span style="color:#D3D3D3;font-family:Arial;font-size:13px;"> или используя любой лаунчер launcher способный запустить аддон или выполнить код:</span><span style="color:#C0C0C0;font-family:Arial;font-size:13px;"><br></span><span style="color:#D3D3D3;font-family:Arial;font-size:13px;"><br>Для обновления эпизодов:</span><span style="color:#9ACD32;font-family:Arial;font-size:13px;"><em><br>RunScript(special://home/addons/context.addtolib/context.py, action=10201) <br></em></span><span style="color:#C0C0C0;font-family:Arial;font-size:13px;"><em><br></em>Для резервного копирования:<em><br></em></span><span style="color:#9ACD32;font-family:Arial;font-size:13px;"><em>RunScript(special://home/addons/context.addtolib/context.py, action=10205)</em></span><span style="color:#C0C0C0;font-family:Arial;font-size:13px;"><br><br></span><span style="color:#1E90FF;font-family:Arial;font-size:13px;"><strong>Другие действия:<br></strong></span><span style="color:#6B8E23;font-family:Arial;font-size:13px;"><em>RunScript(special://home/addons/context.addtolib/context.py, action=</em></span><span style="color:#FF0000;font-family:Arial;font-size:13px;"><strong><em>ID</em></strong></span><span style="color:#6B8E23;font-family:Arial;font-size:13px;"><em>)</em></span><span style="color:#1E90FF;font-family:Arial;font-size:13px;"><strong><br><br></strong></span><span style="color:#FF0000;font-family:Arial;font-size:13px;"><strong>&nbsp;&nbsp;&nbsp;&nbsp; ID </strong></span><span style="color:#D3D3D3;font-family:Arial;font-size:13px;"><strong>для других действий:</strong><br></span><span style="color:#FF0000;font-family:Arial;font-size:13px;"><strong><br></strong></span><span style="color:#D3D3D3;font-family:Arial;font-size:13px;"><strong>&nbsp;&nbsp;&nbsp;&nbsp; </strong>30009 <strong>- </strong>Обновить видео библиотеку<br></span><span style="color:#C0C0C0;font-family:Arial;font-size:13px;">&nbsp;&nbsp;&nbsp;&nbsp; 30027 - Очистить видео библиотеку<br>&nbsp;&nbsp;&nbsp;&nbsp; 10200 - Сбросить путь библиотеки по умолчанию<br>&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="color:#FF0000;font-family:Arial;font-size:13px;"><strong>10201 - Запустить обновление эпизодов</strong></span><span style="color:#C0C0C0;font-family:Arial;font-size:13px;"><br>&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="color:#696969;font-family:Arial;font-size:13px;">10202 - &lt;только для системы&gt;</span><span style="color:#C0C0C0;font-family:Arial;font-size:13px;"><br>&nbsp;&nbsp;&nbsp;&nbsp; 10203 - Выбор цвета меню<br>&nbsp;&nbsp;&nbsp;&nbsp; 10204 - Запустить переименование источников<br>&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="color:#FF0000;font-family:Arial;font-size:13px;"><strong>10205 - Запустить резервное копирование</strong></span><span style="color:#C0C0C0;font-family:Arial;font-size:13px;"><strong><br></strong>&nbsp;&nbsp;&nbsp;&nbsp; 10206 - Удалить все резервные копии<br>&nbsp;&nbsp;&nbsp;&nbsp; 10207 - Восстановить библиотеку из резервной копии<br>&nbsp;&nbsp;&nbsp;&nbsp; 10208 - Сбросить путь резервного копирования по умолчанию<br></span><span style="color:#D3D3D3;font-family:Arial;font-size:13px;">&nbsp;&nbsp;&nbsp;&nbsp; 10209 - Запуск резервного копироваия в автоматическом режиме</span><span style="color:#C0C0C0;font-family:Arial;font-size:13px;"><br>&nbsp;&nbsp;&nbsp;&nbsp; 10210 - Выбор скина<br></span><span style="color:#1E90FF;font-family:Arial;font-size:13px;"><strong><br><br><br><br><br><br><br><br><br><br><br><br><br><br>Other launcher:</strong></span><span style="color:#DCDCDC;font-family:Arial;font-size:13px;"> <br><br></span><span style="color:#C0C0C0;font-family:Arial;font-size:13px;">You can use any launcher which runs the add-on or can execute code:<br></span><span style="color:#9ACD32;font-family:Arial;font-size:13px;"><em>RunAddon(context.addtolib)</em></span><span style="color:#DCDCDC;font-family:Arial;font-size:13px;"><br></span><span style="color:#A9A9A9;font-family:Arial;font-size:13px;"><em><br></em><br></span></div>
+<div id="wb_Text1" style="position:absolute;left:3px;top:38px;width:517px;height:400px;text-align:justify;z-index:0;">
+<span style="color:#D3D3D3;font-family:Arial;font-size:13px;">Репозиторий XXTREP включает в себя два аддона:</span><span style="color:#C0C0C0;font-family:Arial;font-size:13px;"> <br>&nbsp;&nbsp;&nbsp;&nbsp; <br>&nbsp;&nbsp;&nbsp;&nbsp; </span><span style="color:#9ACD32;font-family:Arial;font-size:13px;"><em>ATL: Update launcher </em></span><span style="color:#D3D3D3;font-family:Arial;font-size:13px;">- для запуска обновления эпизодов<br></span><span style="color:#C0C0C0;font-family:Arial;font-size:13px;"><em>&nbsp;&nbsp;&nbsp;&nbsp; </em></span><span style="color:#9ACD32;font-family:Arial;font-size:13px;"><em>ATL: Backup launcher </em></span><span style="color:#D3D3D3;font-family:Arial;font-size:13px;">- для запуска резервного копирования</span><span style="color:#C0C0C0;font-family:Arial;font-size:13px;"><br><br></span><span style="color:#D3D3D3;font-family:Arial;font-size:13px;">Если нужно, Вы можете запустить их, используя Keymap editor </span><span style="color:#A9A9A9;font-family:Arial;font-size:13px;"><em>(как и сам ADD To Lib)</em></span><span style="color:#D3D3D3;font-family:Arial;font-size:13px;"> или используя любой лаунчер launcher способный запустить аддон или выполнить код:</span><span style="color:#C0C0C0;font-family:Arial;font-size:13px;"><br></span><span style="color:#D3D3D3;font-family:Arial;font-size:13px;"><br>Для обновления эпизодов:</span><span style="color:#9ACD32;font-family:Arial;font-size:13px;"><em><br>RunScript(special://home/addons/context.addtolib/context.py, action=10201) <br></em></span><span style="color:#C0C0C0;font-family:Arial;font-size:13px;"><em><br></em>Для резервного копирования:<em><br></em></span><span style="color:#9ACD32;font-family:Arial;font-size:13px;"><em>RunScript(special://home/addons/context.addtolib/context.py, action=10205)</em></span><span style="color:#C0C0C0;font-family:Arial;font-size:13px;"><br><br></span><span style="color:#1E90FF;font-family:Arial;font-size:13px;"><strong>Другие действия:<br></strong></span><span style="color:#6B8E23;font-family:Arial;font-size:13px;"><em>RunScript(special://home/addons/context.addtolib/context.py, action=</em></span><span style="color:#FF0000;font-family:Arial;font-size:13px;"><strong><em>ID</em></strong></span><span style="color:#6B8E23;font-family:Arial;font-size:13px;"><em>)</em></span><span style="color:#1E90FF;font-family:Arial;font-size:13px;"><strong><br><br></strong></span><span style="color:#FF0000;font-family:Arial;font-size:13px;">&nbsp;&nbsp;&nbsp;&nbsp; ID </span><span style="color:#D3D3D3;font-family:Arial;font-size:13px;">для других действий:&nbsp; <a href="javascript:displaylightbox('./sred-launchID.html',{width:510,height:360,overlayShow:true,overlayColor:'#1E1E1E'})" target="_self" class="WGStyle">смотреть</a><br></span><span style="color:#1E90FF;font-family:Arial;font-size:13px;"><strong><br><br></strong></span><span style="color:#DCDCDC;font-family:Arial;font-size:13px;"><br></span><span style="color:#A9A9A9;font-family:Arial;font-size:13px;"><em><br></em><br></span></div>
 <div id="wb_Image1" style="position:absolute;left:0px;top:16px;width:360px;height:20px;z-index:1;">
 <img src="../images/line.png" id="Image1" alt=""></div>
 <div id="wb_Text2" style="position:absolute;left:0px;top:0px;width:391px;height:19px;z-index:2;text-align:left;">
